@@ -86,11 +86,11 @@ function Main_page() {
         {/* 🌤️ Weather Info */}
         <div className="flex flex-col items-center mt-6">
           {weather && weather.temperature > 30 ? (
-            <CloudSunRain className="w-32 h-32" />
+            <CloudSunRain className="w-32 h-32 text-amber-200" />
           ) : weather && weather.temperature < 30 ? (
-            <CloudHail className="w-32 h-32" />
+            <CloudHail className="w-32 h-32 text-amber-200" />
           ) : (
-            <ThermometerSun className="w-32 h-32" />
+            <ThermometerSun className="w-32 h-32 text-amber-200." />
           )}
           <h1 className="text-6xl font-bold text-white mt-4">
             {weather ? `${weather.temperature.toFixed(2)}°C` : "--°C"}
